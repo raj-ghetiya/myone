@@ -13,7 +13,7 @@ $result = queryMySQL("SELECT user,pass FROM members
 WHERE user='$user' AND pass='$pass'");
 if ($result->num_rows == 0)
 {
-$error = "Invalid login attempt";
+$error = "Invalid user";
 }
 
 else
@@ -66,7 +66,7 @@ echo '
 		<div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
 			<div class="max-w-md mx-auto">
 				<div>
-					<h1 class="text-2xl font-semibold">Login Form with Floating Labels</h1>
+					<h1 class="text-2xl font-semibold">Login Form</h1>
 				</div>
 				<div class="divide-y divide-gray-200">
 					<div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
